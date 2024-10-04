@@ -74,7 +74,7 @@ void loop() {
 }
 
 void initDisplay() {
-  tft.initR(INITR_GREENTAB);
+  tft.initR(INITR_BLACKTAB);
   tft.setRotation(1);
   tft.fillScreen(BG_COLOR);
   tft.setTextSize(TEXT_SIZE);
@@ -147,7 +147,7 @@ void displayText(int16_t x, int16_t y, const __FlashStringHelper *label, float v
 
   if (isTemperature) {
     // Dibujar el símbolo de grado
-    tft.fillCircle(cursorX + 2, y + (TEXT_SIZE * 4), 2, ST77XX_BLUE);
+    tft.fillCircle(cursorX + 2, y + (TEXT_SIZE * 4), 2, TEXT_COLOR);
     tft.setCursor(cursorX + 8, y);
     tft.print(F("C"));
   } else {
@@ -170,7 +170,7 @@ void displayCounter(uint16_t counter) {
   int16_t textX = rectX + (rectW - w) / 2;
   int16_t textY = rectY + (rectH + h) / 2 - h;
 
-  tft.setTextColor(GOLD_COLOR, RECT_BG_COLOR);
+  tft.setTextColor(TEXT_COLOR, RECT_BG_COLOR);
   tft.setCursor(textX, textY);
   tft.print(buffer);
 }
