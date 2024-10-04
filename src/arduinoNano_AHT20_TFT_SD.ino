@@ -15,9 +15,9 @@
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 Adafruit_AHTX0 aht;
 
-const int SCREEN_WIDTH = 128;   // Ancho de la pantalla
-const int SCREEN_HEIGHT = 160;  // Alto de la pantalla
-const int TEXT_SIZE = 2;        // Tamaño del texto
+const uint8_t SCREEN_WIDTH = 128;   // Ancho de la pantalla
+const uint8_t  SCREEN_HEIGHT = 160;  // Alto de la pantalla
+const uint8_t  TEXT_SIZE = 2;        // Tamaño del texto
 const int BG_COLOR = ST77XX_BLACK;
 const int TEXT_COLOR = ST77XX_ORANGE;
 const int RECT_BG_COLOR = ST77XX_BLUE;
