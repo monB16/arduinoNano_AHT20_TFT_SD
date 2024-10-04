@@ -6,6 +6,7 @@
 
 // Definición de pines para la pantalla TFT y SD
 #define TFT_CS 10
+
 #define TFT_DC 9
 #define TFT_RST 8
 #define TFT_BL 6
