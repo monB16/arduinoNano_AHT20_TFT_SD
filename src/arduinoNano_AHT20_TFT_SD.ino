@@ -18,15 +18,15 @@ Adafruit_AHTX0 aht;
 const uint8_t SCREEN_WIDTH = 128;   // Ancho de la pantalla
 const uint8_t  SCREEN_HEIGHT = 160;  // Alto de la pantalla
 const uint8_t  TEXT_SIZE = 2;        // Tamaño del texto
-const int BG_COLOR = ST77XX_BLACK;
-const int TEXT_COLOR = ST77XX_ORANGE;
-const int RECT_BG_COLOR = ST77XX_BLUE;
+const uint8_t BG_COLOR = ST77XX_BLACK;
+const uint8_t TEXT_COLOR = ST77XX_ORANGE;
+const uint8_t RECT_BG_COLOR = ST77XX_BLUE;
 const uint16_t GOLD_COLOR = tft.color565(253, 245, 28);  // Color dorado
 
 
 const long INTERVAL = 300003UL;       // Intervalo de tiempo para actualizar la pantalla (5 minutos)
 unsigned long previousMillis = 0;  //  control del tiempo
-int data_counter = 0;
+uint16_t data_counter = 0;
 float temperature, humidity;
 
 void setup() {
