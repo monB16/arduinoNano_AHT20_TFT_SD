@@ -57,7 +57,7 @@ void loop() {
 
   if (currentMillis - previousMillis >= INTERVAL) {
     previousMillis = currentMillis;
-    float temperature, humidity;
+   // float temperature, humidity;
     readSensorData(temperature, humidity);
     displayData(temperature, humidity, data_counter);
 
